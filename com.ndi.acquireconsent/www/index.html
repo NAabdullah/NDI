@@ -2,26 +2,30 @@
 <html>
   <head>
     <title>My PhoneGap</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover"> 
+    <meta name="color-scheme" content="light dark">
     <link rel="stylesheet" href="css/index.css">
-          <script type="text/javascript" charset="utf-8" src="cordova.js"></script>      
-          <script type="text/javascript" charset="utf-8">
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>      
+    <script type="text/javascript" charset="utf-8">
 
-             function onLoad()
-             {
-                  document.addEventListener("deviceready", onDeviceReady, true);
-             }
+        function onLoad()
+        {
+            document.addEventListener("deviceready", onDeviceReady, true);
+        }
 
-             function onDeviceReady()
-             {
-                  // navigator.notification.alert("PhoneGap is working");
-             }
+        function onDeviceReady()
+        {
+            // navigator.notification.alert("PhoneGap is working");
+        }
 
-             function callAnothePage()
-             {
-                window.location = "VerifyUser.html";
-             }
+        function callAnothePage()
+        {
+        window.location = "VerifyUser.html";
+        }
 
-          </script>
+    </script>
 
   </head>
   <body>
@@ -36,9 +40,5 @@
     <script src="cordova.js"></script>
     <script src="js/index.js"></script>
 </body>
-  <!-- <body onload="onLoad();">
-        <h1>Welcome to PhoneGap</h1>
-        <h2>Edit assets/www/index.html</h2>
-        <button name="buttonClick" onclick="callAnothePage()">Click Me!</button>
-  </body> -->
+
 </html>
